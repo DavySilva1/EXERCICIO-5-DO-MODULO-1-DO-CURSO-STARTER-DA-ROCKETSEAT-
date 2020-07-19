@@ -1,0 +1,30 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript Course</title>
+</head>
+
+<body>
+
+    <script>
+        function habilidade(usuarios) {
+            for (usuario of usuarios) {
+                console.log(
+                    'O ' + usuario.nome + ' possui as habilidades: ' + usuario.habilidades
+
+                )
+            }
+        }
+        var usuarios = [{
+            nome: 'Davy',
+            habilidades: ['JavaScript', 'ReactJS', 'Redux']
+        }, {
+            nome: 'Daniel',
+            habilidades: ['VueJS', 'Ruby on Rails', 'elixir']
+        }];
+        habilidade(usuarios);
+    </script>
+</body>
+
+</html>
